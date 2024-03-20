@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SliderDemo", "AllWpf\SliderDemo.csproj", "{1A430827-3C3F-471A-A6A1-F3B64DCECFF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SliderDemo", "AllWpf\SliderDemo.csproj", "{1A430827-3C3F-471A-A6A1-F3B64DCECFF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBinding", "WpfBinding\WpfBinding.csproj", "{DF2A5149-4350-470E-8474-E5AE93C64E8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfBinding", "WpfBinding\WpfBinding.csproj", "{DF2A5149-4350-470E-8474-E5AE93C64E8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldWayBinding", "OldWayBinding\OldWayBinding.csproj", "{D2B55A40-241C-47D4-A882-958087312C7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OldWayBinding", "OldWayBinding\OldWayBinding.csproj", "{D2B55A40-241C-47D4-A882-958087312C7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMbinding", "MVVMbinding\MVVMbinding.csproj", "{5A07C2F9-8514-4406-9F25-79A4DD75F3A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVMbinding", "MVVMbinding\MVVMbinding.csproj", "{5A07C2F9-8514-4406-9F25-79A4DD75F3A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTwoClassesCRUD", "TTwoClassesCRUD\TTwoClassesCRUD.csproj", "{84177511-A75B-45CF-A1FC-707F6E718584}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5A07C2F9-8514-4406-9F25-79A4DD75F3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A07C2F9-8514-4406-9F25-79A4DD75F3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A07C2F9-8514-4406-9F25-79A4DD75F3A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84177511-A75B-45CF-A1FC-707F6E718584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84177511-A75B-45CF-A1FC-707F6E718584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84177511-A75B-45CF-A1FC-707F6E718584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84177511-A75B-45CF-A1FC-707F6E718584}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
