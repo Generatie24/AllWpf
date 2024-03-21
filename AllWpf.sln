@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OldWayBinding", "OldWayBind
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVMbinding", "MVVMbinding\MVVMbinding.csproj", "{5A07C2F9-8514-4406-9F25-79A4DD75F3A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTwoClassesCRUD", "TTwoClassesCRUD\TTwoClassesCRUD.csproj", "{84177511-A75B-45CF-A1FC-707F6E718584}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TTwoClassesCRUD", "TTwoClassesCRUD\TTwoClassesCRUD.csproj", "{84177511-A75B-45CF-A1FC-707F6E718584}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBinding", "SimpleBinding\SimpleBinding.csproj", "{5C77C6AD-5D33-4B32-B188-592B90C31494}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{84177511-A75B-45CF-A1FC-707F6E718584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84177511-A75B-45CF-A1FC-707F6E718584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84177511-A75B-45CF-A1FC-707F6E718584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C77C6AD-5D33-4B32-B188-592B90C31494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C77C6AD-5D33-4B32-B188-592B90C31494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C77C6AD-5D33-4B32-B188-592B90C31494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C77C6AD-5D33-4B32-B188-592B90C31494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
