@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MVVMbinding
+﻿namespace MVVMbinding
 {
     using System.ComponentModel;
 
     public class Person : INotifyPropertyChanged
     {
-        private string firstName;
-        private string lastName;
+        private string? firstName;
+        private string? lastName;
         private int age;
 
-        public string FirstName
+        public string? FirstName
         {
             get { return firstName; }
             set
@@ -29,7 +22,7 @@ namespace MVVMbinding
             }
         }
 
-        public string LastName
+        public string? LastName
         {
             get { return lastName; }
             set
@@ -56,8 +49,8 @@ namespace MVVMbinding
             }
         }
 
-        private string fullName;
-        public string FullName
+        private string? fullName;
+        public string? FullName
         {
             get { return fullName; }
             private set
@@ -75,7 +68,7 @@ namespace MVVMbinding
             FullName = $"{FirstName} {LastName}";
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyName)
         {
