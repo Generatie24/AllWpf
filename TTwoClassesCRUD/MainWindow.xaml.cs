@@ -32,8 +32,14 @@ namespace TTwoClassesCRUD
 
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
-            // Logica voor bijwerken (afhankelijk van de UI en gebruikersinteractie)
-            // Deze kan bijvoorbeeld een dialoogvenster openen om de gegevens te bewerken
+            var selectedPersoon = PersonenDataGrid.SelectedItem as Persoon;
+            if (selectedPersoon != null)
+            {
+                selectedPersoon.Naam = txtNaam.Text;
+                selectedPersoon.Leeftijd = int.Parse(txtLeeftijd.Text);
+                selectedPersoon.Adres.Straat = txtStraat.Text;
+                selectedPersoon.Adres.Stad = txtStad.Text;
+            }
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
@@ -42,6 +48,18 @@ namespace TTwoClassesCRUD
             if (selectedPersoon != null)
             {
                 PersonenManager.Personen.Remove(selectedPersoon);
+            }
+        }
+
+        private void PersonenDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selectedPersoon = PersonenDataGrid.SelectedItem as Persoon;
+            if (selectedPersoon != null)
+            {
+                txtNaam.Text = selectedPersoon.Naam;
+                txtLeeftijd.Text = selectedPersoon.Leeftijd.ToString();
+                txtStraat.Text = selectedPersoon.Adres.Straat;
+                txtStad.Text = selectedPersoon.Adres.Stad;
             }
         }
     }
