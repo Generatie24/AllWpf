@@ -19,9 +19,10 @@ namespace TTwoClassesCRUD
 
         private void SeedData()
         {
-            Personen.Add(new Persoon { Naam = "Jan", Leeftijd = 30, Adres = new Adres { Straat = "Hoofdstraat", Stad = "Brussel" } });
-            Personen.Add(new Persoon { Naam = "Emma", Leeftijd = 25, Adres = new Adres { Straat = "Zijstraat", Stad = "Antwerpen" } });
-            // Voeg meer seed data toe indien nodig
+            Personen.Add(new Persoon { Naam = "Rik", Leeftijd = 30, Adres = new Adres { Straat = "Hoofdstraat", Stad = "Brussel" } });
+            Personen.Add(new Persoon { Naam = "Zak", Leeftijd = 25, Adres = new Adres { Straat = "Zijstraat", Stad = "Antwerpen" } });
+            Personen.Add(new Persoon { Naam = "Gabriela", Leeftijd = 27, Adres = new Adres { Straat = "Zondernaam", Stad = "Gent" } });
+            Personen.Add(new Persoon { Naam = "Hugo", Leeftijd = 26, Adres = new Adres { Straat = "Stationstraat", Stad = "Kortrijk" } });
         }
     }
 }
