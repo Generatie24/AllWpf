@@ -8,7 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
+            <TextBlock Text="Naam:" Background="Aqua"/>
             <TextBox x:Name="txtNaam"/>
+            <TextBlock Text="Leeftijd:" Background="Aqua"/>
             <TextBox x:Name="txtLeeftijd"/>
             <Button Content="Bevestig" Click="Button_Click"/>
         </StackPanel>

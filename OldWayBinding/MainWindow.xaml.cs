@@ -26,7 +26,7 @@ namespace OldWayBinding
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             persoon.Naam = txtNaam.Text;
-            persoon.Leeftijd = int.Parse(txtLeeftijd.Text);  // Zorg voor foutafhandeling in een echte toepassing
+            persoon.Leeftijd = int.Parse(txtLeeftijd.Text);  
 
             MessageBox.Show($"Naam: {persoon.Naam}, Leeftijd: {persoon.Leeftijd}");
         }

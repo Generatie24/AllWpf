@@ -26,8 +26,18 @@ namespace TTwoClassesCRUD
         }
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            var nieuwePersoon = new Persoon { Naam = "Nieuwe Naam", Leeftijd = 20, Adres = new Adres { Straat = "Nieuwe Straat", Stad = "Nieuwe Stad" } };
+           
+            var nieuwePersoon = new Persoon { Naam = txtNaam.Text, Leeftijd = int.Parse(txtLeeftijd.Text), Adres = new Adres { Straat = txtStraat.Text, Stad = txtStad.Text } };
             PersonenManager.Personen.Add(nieuwePersoon);
+        }
+
+        private void ClearBoxex()
+        {
+
+            txtNaam.Text = string.Empty;
+            txtLeeftijd.Text = "";
+            txtStraat.Text = "";
+            txtStad.Text = "";
         }
 
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
@@ -61,6 +71,11 @@ namespace TTwoClassesCRUD
                 txtStraat.Text = selectedPersoon.Adres.Straat;
                 txtStad.Text = selectedPersoon.Adres.Stad;
             }
+        }
+
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        {
+            ClearBoxex();
         }
     }
 }
